@@ -3,11 +3,7 @@ CREATE DATABASE salesbloomacre;
 
 -- Creating Tables
 CREATE TABLE customers(
-company_name VARCHAR(36) PRIMARY KEY,
-address VARCHAR(30),
-city VARCHAR(16),
-state_code VARCHAR(2),
-zip_code INT);
+company_name VARCHAR(36) PRIMARY KEY,);
 
 CREATE TABLE customer_location(
 company_name VARCHAR(36),
