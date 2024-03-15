@@ -17,27 +17,27 @@ Skills Showcased:
 
 Before the dashboard can be created we need to create some tables with the data we want to show. Firstly we will split the data into New and Lapsed revenue, then we can calculate this year and last years revenue. This gives an insight into the breakdown of the firms cashflow.
 
-![](images/revenue_split.png)
+![](images/revenue_split.PNG)
 
 Now we can scale these values to be represented in millions to create an easily understood waterfall chart.
 
-![](images/waterfall_split.png)
+![](images/waterfall_split.PNG)
 
 To gain more insight into the revenue of the company we will breakdown the split of new and existing revenue per month.
 
-![](images/monthly_split.png)
+![](images/monthly_split.PNG)
 
 Having some understanding of the revenue type breakdown of the company we now want to look at the type of customer the company has. We will split the customers into small, medium, and large by the revenue they create. Then we will calculate the % of the customer base each category makes up as well as the % of revenue they create.
 
-![](images/customer_split.png)
+![](images/customer_split.PNG)
 
 Finally, we want to gain some understanding of each managers performance. Calculating their total revenue, average revenue per customer and the % breakdown of their revenue type.
 
-![](images/manager_split.png)
+![](images/manager_split.PNG)
 
 These tables contain all the insights we need to create an informative dashboard, next we simply choose the visualisation types and input the table information, to create an easily understood and interactive dashboard within Excel.
 
-![](images/dashboard_split.png)
+![](images/dashboard_split.PNG)
 
 ## Creating the Database
 
