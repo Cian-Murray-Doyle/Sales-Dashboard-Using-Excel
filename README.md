@@ -1,8 +1,8 @@
 # Sales-Dashboard-Using-Excel
 
-About Using Bloomacre Software sales data for the year to create an interactive dashboard that highlights each sales managers performance and provides insightful revenue statistics. The dashboard can be interacted with by entering a look up number from 1-15 assigned to each sales manager in cell K31.
+About Using Bloomacre Software sales data for the year to create an interactive dashboard that highlights each sales manager's performance and provides insightful revenue statistics. The dashboard can be interacted with by entering a look-up number from 1-15 assigned to each sales manager in cell K31.
 
-Along with the dashboard the company want to implement their data in to an SQL database to allow for quick and easy data query's.
+Along with the dashboard the company want to implement their data into an SQL database to allow for quick and easy data queries.
 
 Skills Showcased:
 
@@ -15,7 +15,7 @@ Skills Showcased:
 
 ## Preparing the Data
 
-Before the dashboard can be created we need to create some tables with the data we want to show. Firstly we will split the data into New and Lapsed revenue, then we can calculate this year and last years revenue. This gives an insight into the breakdown of the firms cashflow.
+Before the dashboard can be created we need to create some tables with the data we want to show. Firstly we will split the data into New and Lapsed revenue, then we can calculate this year's and last year's revenue. This gives an insight into the breakdown of the firm's cashflow.
 
 ![](images/revenue_split.PNG)
 
@@ -31,24 +31,24 @@ Having some understanding of the revenue type breakdown of the company we now wa
 
 ![](images/customer_split.PNG)
 
-Finally, we want to gain some understanding of each managers performance. Calculating their total revenue, average revenue per customer and the % breakdown of their revenue type.
+Finally, we want to gain some understanding of each manager's performance. Calculating their total revenue, average revenue per customer and the % breakdown of their revenue type.
 
 ![](images/manager_split.PNG)
 
-These tables contain all the insights we need to create an informative dashboard, next we simply choose the visualisation types and input the table information, to create an easily understood and interactive dashboard within Excel.
+These tables contain all the insights we need to create an informative dashboard, we simply choose the visualisation types and input the table information, to create an easily understood and interactive dashboard within Excel.
 
 ![](images/dashboard_split.PNG)
 
 ## Creating the Database
 
-In order to move this data into an SQL database we first split it into three different files, transaction data, customer data, and the customer location data. These files will represent the three tables in our database.
+In order to move this data into an SQL database we first split it into three different files, transaction data, customer data, and customer location data. These files will represent the three tables in our database.
 
 ```sql
 CREATE TABLE customers(
 company_name VARCHAR(36) PRIMARY KEY,);
 ```
 
-As one company can have multiple locations we need to split this data into a seperate table, connected to the customer table through company_name.
+As one company can have multiple locations we need to split this data into a separate table, connected to the customer table through company_name.
 
 ```sql
 CREATE TABLE customer_location(
@@ -59,7 +59,7 @@ state_code VARCHAR(2),
 zip_code INT,
 FOREIGN KEY (company_name) REFERENCES customers(company_name));
 ```
-The we create the transactions table connected to the customers table through company_name.
+Then we create the transactions table, connected to the customers table through company_name.
 
 ```sql
 CREATE TABLE transactions(
